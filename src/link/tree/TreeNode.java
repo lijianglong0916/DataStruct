@@ -3,12 +3,12 @@ package link.tree;/*
  *@time
  */
 
-public class TreeNode {
-    private int data;
+public class TreeNode<E> {
+    private E data;
     private TreeNode lNode;
     private TreeNode rNode;
 
-    public TreeNode(int data) {
+    public TreeNode(E data) {
         this.data = data;
     }
 
@@ -26,6 +26,14 @@ public class TreeNode {
 
     public void setrNode(TreeNode rNode) {
         this.rNode = rNode;
+    }
+
+    public void setData(E data) {
+        this.data = data;
+    }
+
+    public E getData() {
+        return data;
     }
 
     public void frontTra() {
@@ -58,7 +66,7 @@ public class TreeNode {
         System.out.print(data + "  ");
     }
 
-    public TreeNode search(int i) {
+    public TreeNode search(E i) {
         TreeNode target = null;
         if (i == this.data) {
             return this;
@@ -75,7 +83,7 @@ public class TreeNode {
         return target;
     }
 
-    public void delete(int data) {
+    public void delete(E data) {
         TreeNode parentNode = this;
         if (parentNode.getlNode() != null && parentNode.getlNode().data == data) {
             parentNode.setlNode(null);
@@ -102,7 +110,7 @@ public class TreeNode {
                 '}';
     }
 
-    public TreeNode(int data, TreeNode lNode, TreeNode rNode) {
+    public TreeNode(E data, TreeNode lNode, TreeNode rNode) {
         this.data = data;
         this.lNode = lNode;
         this.rNode = rNode;
