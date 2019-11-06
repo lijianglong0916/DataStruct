@@ -1,4 +1,4 @@
-package link.链表;/*
+package 链表;/*
  *@author:
  *@time
  */

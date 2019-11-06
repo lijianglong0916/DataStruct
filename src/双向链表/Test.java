@@ -1,9 +1,6 @@
-package link.双向链表;/*
- *@author:
- *@time
- */
+package 双向链表;
 
-import link.Person;
+import bean.Person;
 
 public class Test {
     public static void main(String[] args) {

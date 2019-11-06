@@ -1,4 +1,4 @@
-package link.双向链表;/*
+package 双向链表;/*
  *@author:
  *@time
  */

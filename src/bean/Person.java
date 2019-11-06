@@ -1,7 +1,4 @@
-package link;/*
- *@author:
- *@time
- */
+package bean;
 
 public class Person {
     private int age;
@@ -18,7 +15,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "bean.Person{" +
                 "age=" + age +
                 ", id=" + id +
                 ", name='" + name + '\'' +

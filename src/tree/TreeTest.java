@@ -1,4 +1,4 @@
-package link.tree;/*
+package tree;/*
  *@author:
  *@time
  */
@@ -7,22 +7,23 @@ import java.util.Arrays;
 
 public class TreeTest {
     public static void main(String[] args) {
-//        simpleTree();
-//        fullBinaryTree();
-//        huffmanTreeTest();
+        simpleTree();
+        fullBinaryTree();
+        huffmanTreeTest();
     }
-    public static void huffmanTreeTest(){
-        int[] arr={1,2,3,4,5,6,1,2,7,8,9};
-        HuffmanTree tree=new HuffmanTree();
+
+    public static void huffmanTreeTest() {
+        int[] arr = {1, 2, 3, 4, 5, 6, 1, 2, 7, 8, 9};
+        HuffmanTree tree = new HuffmanTree();
         TreeNode huffmanTree = tree.createHuffmanTree(arr);
         System.out.println(huffmanTree.getData());
         System.out.println(huffmanTree.getlNode().getData());
         System.out.println(huffmanTree.getrNode().getData());
     }
 
-    public static void fullBinaryTree(){
-        int[] arr={1,2,3,4,5,6,1,2,7,8,9};
-        FullBinaryTree binaryTree=new FullBinaryTree(arr);
+    public static void fullBinaryTree() {
+        int[] arr = {1, 2, 3, 4, 5, 6, 1, 2, 7, 8, 9};
+        FullBinaryTree binaryTree = new FullBinaryTree(arr);
         binaryTree.beforeTra(0);
         binaryTree.maxHeap(0);
         System.out.println();
@@ -32,7 +33,7 @@ public class TreeTest {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void simpleTree(){
+    public static void simpleTree() {
         Tree tree = new Tree(new TreeNode(11));
         TreeNode treeNode2 = new TreeNode(12);
         TreeNode treeNode3 = new TreeNode(13);
@@ -51,10 +52,11 @@ public class TreeTest {
         treeNode4.setlNode(treeNode8);
         treeNode4.setrNode(treeNode9);
         tree.getTopTree().frontTra();
+        System.out.println();
         TreeNode node = tree.getTopTree().search(12);
         System.out.println(node);
         tree.getTopTree().delete(12);
         tree.getTopTree().frontTra();
-
+        System.out.println();
     }
 }

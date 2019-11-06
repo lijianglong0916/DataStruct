@@ -1,9 +1,9 @@
-package link.链表;/*
+package 链表;/*
  *@author:
  *@time
  */
 
-import link.Person;
+import bean.Person;
 
 public class NodeTest {
     public static void main(String[] args) {

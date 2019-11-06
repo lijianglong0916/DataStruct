@@ -1,4 +1,4 @@
-package link.tree;/*
+package tree;/*
  *@author:
  *@time
  */
@@ -104,10 +104,7 @@ public class TreeNode<E> {
     @Override
     public String toString() {
         return "TreeNode{" +
-                "data=" + data +
-                ", lNode=" + lNode +
-                ", rNode=" + rNode +
-                '}';
+                "data=" + data +'}';
     }
 
     public TreeNode(E data, TreeNode lNode, TreeNode rNode) {
