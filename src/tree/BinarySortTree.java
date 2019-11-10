@@ -6,6 +6,10 @@ package tree;/*
 public class BinarySortTree {
     private TreeNode node;
 
+    /**
+     * 返回当前树中不满足平衡二叉树的节点，如果没有则返回null
+     * @return
+     */
     public TreeNode getNoBalanceNode() {
         return noBalanceNode;
     }

@@ -29,12 +29,12 @@ public class TreeTest {
         sortTree.add(treeNode4);
         sortTree.add(treeNode5);
         sortTree.add(treeNode7);
-//        sortTree.add(treeNode8);
-//        sortTree.add(treeNode9);
+        sortTree.add(treeNode8);
+        sortTree.add(treeNode9);
         sortTree.midShow();
-//        TreeNode search = sortTree.search(10);
-//        sortTree.delete(19);
-//        sortTree.midShow();
+        TreeNode search = sortTree.search(10);
+        sortTree.delete(17);
+        sortTree.midShow();
         System.out.println();
         sortTree.isBalanceBinaryTree(sortTree.search(16));
         System.out.println(sortTree.getNoBalanceNode());
