@@ -83,6 +83,14 @@ public class TreeNode<E> {
         return target;
     }
 
+    /**
+     * 获取当前节点的深度
+     * @return
+     */
+    public int getHeight() {
+         return Math.max(rNode==null?0:rNode.getHeight(), lNode==null?0:lNode.getHeight())+1;
+    }
+
     public void delete(E data) {
         TreeNode parentNode = this;
         if (parentNode.getlNode() != null && parentNode.getlNode().data == data) {
