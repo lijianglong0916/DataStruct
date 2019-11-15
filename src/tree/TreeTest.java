@@ -32,6 +32,7 @@ public class TreeTest {
         sortTree.add(treeNode8);
         sortTree.add(treeNode9);
         sortTree.midShow();
+
         TreeNode search = sortTree.search(10);
         sortTree.delete(17);
         sortTree.midShow();
